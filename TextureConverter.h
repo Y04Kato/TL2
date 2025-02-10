@@ -1,10 +1,9 @@
 #pragma once
 #include <string>
 #include "externals/DirectXTex/DirectXTex/DirectXTex.h"
-class TextureConverter
-{
+
+class TextureConverter{
 public:
-	
 	//テクスチャをWICからDDSに変換する
 	void ConvertTextureWICToDDS(const std::string& filePath);
 
@@ -21,9 +20,12 @@ private:
 	DirectX::TexMetadata metadata_;
 	DirectX::ScratchImage scratchImage_;
 
+	//ディレクトリ
 	std::wstring directoryPath_;
-	//ファイル名
+
+	//ファイル
 	std::wstring fileName_;
+
 	//拡張子
 	std::wstring fileExt_;
 };

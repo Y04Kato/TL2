@@ -3,8 +3,7 @@
 #include <cassert>
 #include "TextureConverter.h"
 #include <Windows.h>
-enum Argument
-{
+enum Argument{
 	kApplicationPath,
 	kFilePath,
 	

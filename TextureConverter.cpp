@@ -1,9 +1,8 @@
 #include "TextureConverter.h"
 #include "ConvertString.h"
-//#include <cstdio>
-//#include <cstdlib>
 #include <cassert>
 #include <windows.h>
+
 void TextureConverter::ConvertTextureWICToDDS(const std::string& filePath) {
 	//ファイル読み込み
 	LoadWICTextureFromFile(filePath);
